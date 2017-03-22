@@ -65,6 +65,10 @@ The icon to show in md-button
 
 - **csv.content**
 
+button class for non-material button class
+
+	**csv.buttonClass**
+
 A variable which will contain the content loaded by the file input
 
 - **csv.header**
