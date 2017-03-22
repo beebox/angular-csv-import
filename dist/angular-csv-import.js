@@ -1,5 +1,5 @@
-/*! angular-csv-import - v0.0.36 - 2016-11-01
-* Copyright (c) 2016 ; Licensed  */
+/*! angular-csv-import - v0.0.37 - 2017-03-21
+* Copyright (c) 2017 ; Licensed  */
 'use strict';
 
 var csvImport = angular.module('ngCsvImport', []);
@@ -35,7 +35,7 @@ csvImport.directive('ngCsvImport', function() {
 		  	'<div ng-show="headerVisible"><div class="label">Header</div>' +
 		  	(material ? '<input type="checkbox" ng-model="header"></div>' :
 		  		'<md-switch class="ng-csv-import-header-switch" ng-model="header"></md-switch>') +
-			'<div ng-show="encoding"><div class="label">Encoding</div><span>{{encoding}}</span></div>'+
+			'<div ng-show="encodingVisible"><div class="label">Encoding</div><span>{{encoding}}</span></div>'+
 			'<div ng-show="separatorVisible">'+
 			'<div class="label">Seperator</div>'+
 			'<span><input class="separator-input ' + (material ? '_md md-input' : '')  + ' " type="text" ng-change="changeSeparator" ng-model="separator"><span>'+
